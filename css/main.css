@@ -1,0 +1,163 @@
+body {
+    font-family: Nunito;
+    width: 100%;
+    margin: 0 auto;
+    background: #363636;
+    font-style: normal;
+    font-weight: normal;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+a {
+    font-family: Nunito Sans;
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.6s;
+}
+
+a:hover {
+    color: #E3B873;
+}
+
+.selected {
+    color: #E3B873;
+    text-decoration: underline;
+}
+
+h2,
+h4 {
+    font-family: Yeseva One;
+}
+
+h2 {
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+
+}
+
+.text--orange {
+    color: #E3B873;
+}
+
+.slider {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    background: #131313;
+    padding: 50px 0px 100px 0px;
+}
+
+.projects__menu {
+    width: 56%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 160px 15px 0px;
+}
+
+.projects {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none;
+}
+
+.projects__left {
+    display: flex;
+    width: 30%;
+    margin: 10px 20px 100px 130px;
+    flex-direction: column;
+}
+
+.projects__left-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects__left--title {
+    margin: 0px 0px 20px 0px;
+}
+
+.projects__left--text {
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.projects__left--info {
+    width: 100%;
+}
+
+.projects__left--sample {
+    flex: 0 50%;
+}
+
+.projects__left--description {
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.projects__right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+
+.projects__right--img {
+    flex: 2 100%;
+}
+
+.slider__navigation {
+    /* display: flex; */
+    /* align-content: center; */
+    margin: -70px 0px 0px 130px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 7px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #FFFFFF;
+}
+
+.arrow-left,
+.arrow-right {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: xx-large;
+    margin: 0px 15px;
+    transition: color 0.6s ease;
+}
+.arrow-left:hover,
+.arrow-right:hover {
+    color: #FFFFFF;
+}
