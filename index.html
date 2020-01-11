@@ -8,135 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Yeseva+One&display=swap" rel="stylesheet">
-    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="js/main.jsx" type="text/babel"></script>
 </head>
 
 <body>
-    <div class="slider">
-            <div class="projects__menu">
-                    <a class="projects__menu--link selected" href="#">Rostov-on-Don, Admiral</a>
-                    <a class="projects__menu--link" href="#">Sochi, Thieves</a>
-                    <a class="projects__menu--link" href="#">Rostov-on-Don, Patriotic</a>
-                </div>
-        <div class="projects">
-            <div class="projects__left">
-                <div class="projects__left--info">
-                    <h2 class="text--orange projects__left--title">Completed <br> projects <span>&emsp; -------</span>
-                    </h2>
-                    <p class="projects__left--text">Only a small part of the work performed by our company is
-                        represented on this site. For
-                        14 years
-                        on the construction market we have been making happy more th an 1000 families.</p>
-                </div>
-                <div class="projects__left-wrap">
-                    <div class="projects__left--sample">
-                        <h4 class="text--orange">City:</h4>
-                        <p class="projects__left--description">Rostov-on-Don<br>
-                            LCD Admiral</p>
-                    </div>
-                    <div class="projects__left--sample">
-                        <h4 class="text--orange">Apartment area:</h4>
-                        <p class="projects__left--description">81 m<sup>2</sup></p>
-                    </div>
-                    <div class="projects__left--sample">
-                        <h4 class="text--orange">Repair time:</h4>
-                        <p class="projects__left--description">3.5 months</p>
-                    </div>
-                    <div class="projects__left--sample">
-                        <h4 class="text--orange">Repair cost:</h4>
-                        <p class="projects__left--description">Upon request</p>
-                    </div>
-                </div>
-            </div>
-            <div class="projects__right">
-                <div class="projects__right--img">
-                    <img class="small-screen-invisible" src="images/image 2.1.jpg" width="679" height="482"
-                        alt="room with chairs">
-                </div>
-            </div>
-        </div>
-        <div class="projects hidden">
-            <div class="projects__left">
-                <div class="projects__left--info">
-                    <h2 class="text--orange projects__left--title">Completed <br> projects <span>&emsp; -------</span>
-                    </h2>
-                    <p class="projects__left--text">Only a small part of the work performed by our company is
-                        represented on this site. For
-                        14 years
-                        on the construction market we have been making happy more th an 1000 families.</p>
-                </div>
-                <div class="projects__left-wrap">
-                    <div class="projects__left--sample">
-                        <h4 class="text--orange">City:</h4>
-                        <p class="projects__left--description">Sochi<br>
-                            Thieves</p>
-                    </div>
-                    <div class="projects__left--sample">
-                        <h4 class="text--orange">Apartment area:</h4>
-                        <p class="projects__left--description">105 m<sup>2</sup></p>
-                    </div>
-                    <div class="projects__left--sample">
-                        <h4 class="text--orange">Repair time:</h4>
-                        <p class="projects__left--description">4 months</p>
-                    </div>
-                    <div class="projects__left--sample">
-                        <h4 class="text--orange">Repair cost:</h4>
-                        <p class="projects__left--description">Upon request</p>
-                    </div>
-                </div>
-            </div>
-            <div class="projects__right">
-                <div class="projects__right--img">
-                    <img class="small-screen-invisible" src="images/image 2 (4).jpg" width="679" height="482"
-                        alt="room with chairs">
-                </div>
-            </div>
-        </div>
-        <div class="projects hidden">
-            <div class="projects__left">
-                <div class="projects__left--info">
-                    <h2 class="text--orange projects__left--title">Completed <br> projects <span>&emsp; -------</span>
-                    </h2>
-                    <p class="projects__left--text">Only a small part of the work performed by our company is
-                        represented on this site. For
-                        14 years
-                        on the construction market we have been making happy more th an 1000 families.</p>
-                </div>
-                <div class="projects__left-wrap">
-                    <div class="projects__left--sample">
-                        <h4 class="text--orange">City:</h4>
-                        <p class="projects__left--description">Rostov-on-Don<br>
-                            Patriotic</p>
-                    </div>
-                    <div class="projects__left--sample">
-                        <h4 class="text--orange">Apartment area:</h4>
-                        <p class="projects__left--description">93 m<sup>2</sup></p>
-                    </div>
-                    <div class="projects__left--sample">
-                        <h4 class="text--orange">Repair time:</h4>
-                        <p class="projects__left--description">3 months</p>
-                    </div>
-                    <div class="projects__left--sample">
-                        <h4 class="text--orange">Repair cost:</h4>
-                        <p class="projects__left--description">Upon request</p>
-                    </div>
-                </div>
-            </div>
-            <div class="projects__right">
-                <div class="projects__right--img">
-                    <img class="small-screen-invisible" src="images/image 3 (3).jpg" width="679" height="482"
-                        alt="room with chairs">
-                </div>
-            </div>
-        </div>
-        <div class="slider__navigation">
-            <span class="arrow-left">&#8592;</span>
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="arrow-right">&#8594;</span>
-        </div>
-    </div>
+    <div id="slider-place"></div>
+    
 </body>
 
 </html>
